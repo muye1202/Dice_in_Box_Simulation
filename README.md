@@ -50,7 +50,7 @@ where $R^T$ is the transpose of the rotation matrices describing the system's ro
 
 
 ### Numeric integration
-Runge-Kuta integration is used over Euler integration for better performance:
+Runge-Kuta integration is used over Euler integration for better accuracy:
 
 ```
 def integrate(f, xt, dt):
@@ -68,4 +68,10 @@ Check the distance between the tips of the dice and each wall of the box, when t
 
 When calculating the position of velocity of the system after impact, numerical values of all the terms in the symbolic solution of the governing equations are plugged in first instead of solving the symbolic solution directly, which can greatly reduce the time used to solve the impact equations
 
-Note: to check the implementation, please find `impact_update` function to see how the impact equations are solved, and `simulate_with_impact` function to see how impact detection is incorporated into the simulation loop.
+To check the implementation details, please refer to `impact_update` function to see how the impact equations are solved, and `simulate_with_impact` function to see how impact detection is incorporated into the simulation loop.
+
+
+### Result animation
+The solved trajectory of configuration variables q for the box and dice are then the input to the animation function, and the positions of each component of the system at each time step is calculated.
+
+Please refer to `animate_boxndice` function to see the detailed implementation of the animation function.
