@@ -1,4 +1,6 @@
 # Dice in Box Impact Simulation
+Author: Muye Jia
+
 Simulate the impact dynamics of a dice rolling around in a box using SymPy.
 
  
