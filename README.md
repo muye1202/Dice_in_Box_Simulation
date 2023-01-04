@@ -21,7 +21,7 @@ equation of the system and corresponding impact rules.
 ### Frames used in modelling
 ![image](https://user-images.githubusercontent.com/112987403/210476376-70c1133a-52b7-4202-b1be-8e437a458e14.png)
 
-Frames used in simulation. bc represents box center frame; "dc" represents ”dice center”, "bc" represents "box center".
+Frames used in simulation. "bc" represents box center frame; "dc" represents ”dice center”, "bc" represents "box center".
 
 ### Calculation of Euler-Lagrange equation
 Euler-Lagrange equation with forcing term on the right-hand side is used:
